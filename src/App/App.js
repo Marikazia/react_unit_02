@@ -7,31 +7,29 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
+const headerData = {
+	site_name : 'site_name',
+	second_header : 'site_title',
+	nav : [
+		{ "link" : "nav1", "text": "my link 1 "},				
+		{ "link" : "nav2", "text": "my link 2 "},				
+		{ "link" : "nav3", "text": "my link 3 "},			
+	]
+}
 
-
-
-// const headerData = {
-//   site_name: 'my test site name',
-//   nav: [
-//     { "link": "nav1", "text": "my link" },
-//     { "link": "nav2", "text": "my link 2" },
-//     { "link": "nav3", "text": "my link 3" },
-//   ]
-// };
-
-// const goods = [
-//   { "title": "apple", "cost": 330, "image": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_maca-512.png" },
-//   { "title": "pear", "cost": 530, "image": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_pera-512.png" },
-// ];
-
-
+const sidebarData = {
+	sidebar_ul : [
+		{ "link" : "li1", "text": "Page 1 "},				
+		{ "link" : "li2", "text": "Page 2 "},				
+		{ "link" : "li3", "text": "Page 3 "},	
+	]
+}
 
 function App() {
   return (
     <>
-      <Header data={headerData} />
-      <Test />
-      {goods.map(item => <Goods title={item.title} cost={item.cost} image={item.image} />)}
+      <Header data={headerData}/>
+			<Main data={sidebarData}/>
     </>
   );
 }
