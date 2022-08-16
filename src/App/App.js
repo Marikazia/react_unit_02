@@ -30,6 +30,7 @@ function App() {
     <>
       <Header data={headerData}/>
 			<Main data={sidebarData}/>
+			<Footer data={headerData}/>
     </>
   );
 }
